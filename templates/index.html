@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Stalinist+One&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin+Sketch:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        h1,h3 {
+            color: grey;
+            font-family: 'Cabin Sketch', cursive;
+
+        }
+        .profile{
+            background-color: bisque;
+            margin: 10px;
+            padding: 10px;
+            font-family: 'Russo One', sans-serif;
+        }
+        li{
+            padding: 10px;
+            font-family: 'Russo One', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Home Page</h1>
+    <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="#">News</a></li>
+    </ul>
+    <div class="profile">
+        <h3>Hello {{ user.name }}</h3>
+        <p>Nikname: {{ user.nikname }}</p>
+        <p>Age: {{ user.age }}</p>
+
+    </div>
+
+</body>
+</html>
